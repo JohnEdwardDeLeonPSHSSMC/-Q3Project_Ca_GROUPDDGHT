@@ -57,12 +57,14 @@
                 {
                     alert( "Coin is " + compgen + ". You chose " + playerChoice);
                     document.getElementById('coinChoice').disabled = true;
+                    document.getElementById('play').disabled = true;
                     start = 1;
                 }
                 else 
                 {
                     alert( "Coin is " + compgen + ". You chose " + playerChoice);
                     document.getElementById('coinChoice').disabled = true;
+                    document.getElementById('play').disabled = true;
                     start = 2;
                 }
                 document.getElementById('resetButton').disabled = false;
@@ -94,6 +96,7 @@
             document.getElementById('result').innerText = " ";
             document.getElementById('victoryMessage').innerText = " ";
             document.getElementById('coinChoice').disabled = false;
+            document.getElementById('play').disabled = false;
 
         }
 
