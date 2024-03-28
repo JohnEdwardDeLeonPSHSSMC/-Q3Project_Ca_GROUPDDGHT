@@ -215,10 +215,12 @@
         
         if (p1health <= 0) {
             document.getElementById('victoryMessage').innerText = "Opponent wins";
+            start = 0;
             document.getElementById('attackButton').disabled = true;
             document.getElementById('defendButton').disabled = true;
         } else if (o1health <= 0) {
             document.getElementById('victoryMessage').innerText = "Player wins";
+            start = 0;
             document.getElementById('attackButton').disabled = true;
             document.getElementById('defendButton').disabled = true;
         }
