@@ -171,9 +171,6 @@
             }
         
             GameStatus();
-            document.getElementById('attackButton').disabled = false;
-            document.getElementById('defendButton').disabled = false;
-            document.getElementById('resetButton').disabled = false;
     }
 
         function opponentDefend() /* what the opponent should do when it defends in case of an attack by the player and how will it do so in differing degrees*/{
@@ -206,9 +203,6 @@
             }
             
             GameStatus();
-            document.getElementById('attackButton').disabled = false;
-            document.getElementById('defendButton').disabled = false;
-            document.getElementById('resetButton').disabled = false;
     }
     
     function GameStatus() /* it detect when the player health or opponent health reach 0 */ {
