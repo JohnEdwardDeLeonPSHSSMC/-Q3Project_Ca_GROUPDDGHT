@@ -169,7 +169,8 @@
             document.getElementById("result").innerText = "You defended perfectly!";
             }
             }
-        
+
+            document.getElementById("defendButton").disabled = false;
             GameStatus();
     }
 
@@ -201,7 +202,8 @@
                 document.getElementById("oAction").innerText = "The opponent defended too."
                 document.getElementById("result").innerText = "You both defended!";
             }
-            
+
+            document.getElementById("defendButton").disabled = false;
             GameStatus();
     }
     
