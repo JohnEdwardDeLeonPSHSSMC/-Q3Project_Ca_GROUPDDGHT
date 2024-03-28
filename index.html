@@ -56,11 +56,13 @@
             if(playerChoice===compgen) /* decides whether the player can attack first or no */
                 {
                     alert( "Coin is " + compgen + ". You chose " + playerChoice);
+                    document.getElementById('coinChoice').disabled = true;
                     start = 1;
                 }
                 else 
                 {
                     alert( "Coin is " + compgen + ". You chose " + playerChoice);
+                    document.getElementById('coinChoice').disabled = true;
                     start = 2;
                 }
                 document.getElementById('resetButton').disabled = false;
@@ -91,6 +93,7 @@
             document.getElementById('oAction').innerText = " ";
             document.getElementById('result').innerText = " ";
             document.getElementById('victoryMessage').innerText = " ";
+            document.getElementById('coinChoice').disabled = false;
 
         }
 
