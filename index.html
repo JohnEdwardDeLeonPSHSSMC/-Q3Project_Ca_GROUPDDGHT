@@ -214,15 +214,15 @@
     function GameStatus() /* it detect when the player health or opponent health reach 0 */ {
         
         if (p1health <= 0) {
+            start = 0;
             document.getElementById('attackButton').disabled = true;
             document.getElementById('defendButton').disabled = true;
             document.getElementById('victoryMessage').innerText = "Opponent wins";
-            start = 0;
         } else if (o1health <= 0) {
+            start = 0;
             document.getElementById('attackButton').disabled = true;
             document.getElementById('defendButton').disabled = true;
             document.getElementById('victoryMessage').innerText = "Player wins";
-            start = 0;
         }
     }
     </script>
