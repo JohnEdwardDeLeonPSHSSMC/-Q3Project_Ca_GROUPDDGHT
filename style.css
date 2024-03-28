@@ -79,6 +79,11 @@ body {
     background-color: #45a049;
 }
 
+#play:disabled {
+    background-color:white;
+    color:gray;
+}
+
 #resetButton {
     margin-top: 10px;
     display: inline-block;
